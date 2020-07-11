@@ -1,0 +1,256 @@
+/* ======== BASE STYLE ============== */
+*{
+  box-sizing: border-box;
+}
+html{
+  /* box-sizing: border-box; */
+  color: white;
+}
+
+body{
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.wrapper{
+  max-width: 1120px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+/* ======== HEADER STYLE ============== */
+
+.page-header{
+  width: 100%;
+  height: 66px;
+  background-color: rgba(0,0,0,0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.page-header .wrapper{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav ul{
+  width: 100%;
+  /* border: 2px solid hotpink; */
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-nav ul li a{
+  color: white;
+  text-decoration: none;
+  /* padding: 0 10px; */
+  margin-left: 90px;
+}
+
+.main-nav ul li a:hover{
+  color: #ca0500;
+}
+
+
+
+/* ======================== MAIN STYLE ========================= */
+
+
+/* ======== BANNER ============== */
+.banner{
+  width: 100%;
+  height: 612px;
+  background-image: url('../images/ExotiCar-banner.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* flex display */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-block{
+  /* border:2px solid hotpink; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px; */
+}
+
+.banner-block h1{
+  font-size: 60px;
+  font-weight: bold;
+  /* padding-top: 35px; */
+  margin-top: 35px;
+}
+
+.banner-block p{
+  font-size: 21px;
+  font-weight: 300;
+  margin: 15px 0;
+}
+
+.btn{
+  text-decoration: none;
+  color: inherit;
+  padding: 20px 30px;
+  font-size: 14px;
+  width: 166px;
+  border: 1px solid #ca0500;
+  background-color: #ca0500;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.btn:hover{
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
+  border: 1px solid red;
+}
+
+/* ========== End of Banner */
+
+/* ======== ARTICLE  ============== */
+.articles{
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(-5deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-5deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(95deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(27,27,27,1) 50%,rgba(27,27,27,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*  */
+}
+
+.articles .wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+article{
+  width: 50%;
+  padding-top: 60px;
+  /* border: 2px solid hotpink; */
+}
+
+article:first-of-type{
+  padding-right: 65px;
+  color: black;
+}
+article:last-of-type{
+  padding-left: 65px;
+}
+
+article h2{
+  font-size: 36px;
+  font-weight: 300;
+}
+
+h2::after{
+  content: '.';
+  font-size: 0;
+  display: block;
+  height: 2px;
+  width: 38px;
+  background-color: #ca0500;
+  margin: 25px 0 28px 0;
+}
+
+.quote{
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.text{
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+/* ======== FOOTER  ============== */
+
+.page-footer{
+  background-color: #111111;
+  padding-top: 25px;
+  /*  */
+}
+
+.page-footer > .wrapper{
+  /* border: 1px solid hotpink; */
+  display: flex;
+  /* flex-flow: row wrap; */
+  justify-content: space-between;
+  /* align-items: center; */
+  
+}
+
+.footer-col{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.footer-col a{
+  text-decoration: none;
+  color: #999999;
+}
+
+.footer-col a:hover{
+  cursor: pointer;
+  color: white;
+}
+
+.footer-col h3{
+  font-size: 13px;
+}
+.footer-col h3::after{
+  /* must use display:block to show the border */
+  display: block;
+  content: '.';
+  font-size: 0;
+  width: 90%;
+  height: 1px;
+  background-color: #292929;
+  margin: 15px 0;
+
+}
+.footer-col li{
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.copy{
+  color: #585858;
+  margin-top: 32px;
+}
+
+.social ul{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.social a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 100%;
+  margin-right: 14px;
+}
+
+.social a:hover{
+    color: #ca0500;
+    background-color: #fff;
+}

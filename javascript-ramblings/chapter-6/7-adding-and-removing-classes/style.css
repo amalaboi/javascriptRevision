@@ -1,0 +1,23 @@
+h1{
+  font-size: 60px;
+  text-align: center;
+}
+
+.test{
+  color: crimson;
+}
+.title{
+  color: orange;
+}
+
+.error{
+  padding: 10px;
+  color: crimson;
+  border: 1px dotted crimson;
+}
+
+.success{
+  padding: 10px;
+  color: limegreen;
+  border: 1px dotted limegreen;
+}

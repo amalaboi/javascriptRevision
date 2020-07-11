@@ -1,0 +1,32 @@
+// variable declarations
+console.log('----------------------------------');
+console.log('variable declarations');
+console.log('----------------------------------');
+let age = 25;
+console.log(age);
+let name = 'kemu';
+console.log(name);
+const pi = 3.14; //const variable declaration... can't be changed. 
+console.log('pi',pi);
+let names = ['ryu','ken','remi'];
+console.log('array',names);
+let countries = ['japan','USA','Odesha'];
+let text = `Three fighters namely (${names}) representing their countries respectively, (${countries})`;
+console.log(text);
+let email = 'mario@thenetninja.co.uk';
+let uppperCase = email.toUpperCase();
+console.log('upperCase =', uppperCase);
+let eslice = email.slice(2,5);
+console.log('slice(2,5)',eslice);
+let esub = email.substr(4,10);
+console.log('substr(4,10)',esub);
+let ereplace = email.replace('m','w');
+console.log('replace("m","w")',ereplace);
+console.log('10 % 3 = ', 10%3);
+let likes = 10;
+likes++;
+console.log('likes++ ', likes);
+likes-=6;
+console.log('likes',likes);
+likes+=5;
+console.log('likes',likes);
