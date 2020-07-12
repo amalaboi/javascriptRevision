@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>creating and removing elements...</title>
+</head>
+
+<style>
+
+  body{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    padding: 5%;
+  }
+  li{
+    list-style: none;
+    max-width: 200px;
+    padding: 8px;
+    margin: 8px auto;
+    background: #eee;
+    border: 1px dotted #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  h1, button{
+    background: #eee;
+    border: 1px dotted #ddd;
+    margin-left: 40px;
+  }
+
+  button{
+    padding: 10px;
+    color: blue;
+    width: 200px;
+    cursor: pointer;
+  }
+
+</style>
+
+<body>
+  <h1>Todos</h1>
+
+  <ul>
+    <li>buy milk</li>
+    <li>read a book</li>
+    <li>play the guitar</li>
+    <li>pay the bills :(</li>
+  </ul>
+
+  <button>add new Todos</button>
+  
+  <script src="sandbox.js"></script>
+</body>
+</html>
