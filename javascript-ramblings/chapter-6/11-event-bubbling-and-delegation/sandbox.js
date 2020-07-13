@@ -21,6 +21,7 @@
       // ul.append(li);
 
       //prepend to the parent(ul)
+      console.log('tags/element added to the DOM - ',li);
       ul.prepend(li);
 
   });
@@ -45,7 +46,7 @@
 //event delegation
 ul.addEventListener('click', e => {
   if(e.target.tagName === 'LI'){
-    console.log(e.target);
+    console.log('tags/element removed from the DOM - ',e.target);
     e.target.remove();
   }
 });
