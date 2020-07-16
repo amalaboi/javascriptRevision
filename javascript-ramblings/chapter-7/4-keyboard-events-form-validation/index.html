@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyboard events...</title>
+
+  <style>
+
+    html,body,form,input,h1{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: #eee;
+      border: 2px solid royalblue;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1{
+      font-size: 5rem;
+      color: red;
+      margin-bottom: 2rem;
+    }
+
+    form{
+      width: 650px;
+      height: 200px;
+      /* margin: 40px auto; */
+      background-color: white;
+      border: 2px solid red;
+      padding: 30px;
+    }
+
+    input{
+      display: block;
+      margin: 10px auto;
+      padding: 4px;
+      /* border: 2px solid royalblue; */
+      border-radius: 10px;
+    }
+
+    input[placeholder = 'username']{
+      font-size: 1.5rem;
+      /* color: aqua; */
+      /* text-align: center; */
+    }
+
+    input[type = 'submit']{
+      font-size: 1rem;
+      width: 100px;
+      height: 30px;
+    }
+
+    .success{
+      border: 5px solid limegreen;
+    }
+
+    .error{
+      border: 5px solid crimson;
+    }
+
+
+      
+  </style>
+</head>
+<body>
+
+  <h1>Habit - Anonymous</h1>
+
+  <form class="signup-form">
+    <input type="text" id="username" placeholder="username">
+    <input type="submit" value="submit">
+    <div class="feedback"></div>
+  </form>
+  
+  <script src="sandbox.js"></script>
+</body>
+</html>
