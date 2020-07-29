@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body,div,h1,h2,span{
+      margin: 0px;
+      padding: 0px;
+    }
+    body{
+      background-color: black;
+    }
+    .container{
+      max-width: 660px;
+      margin: 5px auto;
+      /* border: 1px solid white; */
+    }
+    .logo, .header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo img{
+      width: 150px;
+      height: 50px;
+    }
+    .header img{
+      /* border: 2px solid red; */
+      width: 100%;
+      height: 480px;
+    }
+    .head-line{
+      background-color: #ffffff;
+      width: 100%;
+      height: 40px;
+      text-align: center;
+    }
+
+    .promos{
+      width: 100%;
+      height: 20%;
+      background-color: white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .head-line{
+      padding: 20px 0px;
+    }
+    .promo_1,.promo_2{
+      width: 35%;
+      height: 20%;
+      /* border: 1px solid red; */
+      padding: 10px;
+      text-align: center;
+
+    }
+    .link-block{
+      width: 100%;
+      height: 150px;
+      background-color: #ffffff;
+      /* border: 1px solid green; */
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer{
+      padding: 20px;
+      font-size: 12px;
+      color: #979797;
+    }
+    .bid-btn{
+      text-decoration: none;
+      width: 150px;
+      height: 40px;
+      font-size: 23px;
+      border: 1px solid blue;
+      background-color: royalblue;
+      color: #ffffff;
+      border-radius: 20px;
+      padding-top: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .bid-btn:hover{
+      /* color: rgba(0, 0, 1, .9); */
+      background-color: rgba(65, 105, 225, .7);
+    }
+  </style>
+</head>
+<body>
+  <!-- Rough guide to the table html -->
+  <div style="font-size: 1px; color: #efe1b0; display: none;">
+    Place your preview message text here. This will show in most email clients as the preview
+    text in the inbox. Also, make sure it is long enough to take up all of the space available
+    by your chosen email clients.
+  </div>
+
+  <div class="container">
+    <div class="logo">
+      <img src="images/abstract-mf-logo-white.png" alt="abstract logo">
+    </div>
+    <div class="header">
+      <img src="images/abstract-cool.gif" alt="cool animation">
+    </div>
+    <div class="head-line">
+      <h1>abstract funk art for You!</h1>
+    </div>
+    <div class="promos">
+      <div class="promo_1">
+        <img src="images/yellow-and-red-5-door-hatchback-die-cast-model-982105.jpg" alt="">
+        <h2>Header 1</h2>
+        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At quo eligendi ab. Blanditiis, consectetur autem? 
+        Suscipit in totam rerum, consequuntur labore dolores hic natus dolorem distinctio molestiae et ex iure.
+
+      </div>
+      <div class="promo_2">
+        <img src="images/yellow-and-black-coupe-scale-model-982100.jpg" alt="">
+        <h2>Header 2</h2>
+        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At quo eligendi ab. Blanditiis, consectetur autem? 
+        Suscipit in totam rerum, consequuntur labore dolores hic natus dolorem distinctio molestiae et ex iure.
+
+      </div>
+    </div>
+    <div class="link-block">
+      <a href="#" class="bid-btn">BiD!</a>
+      <span class="footer">PECKHAM OFFICE, MAIN FUNK LONDON,
+            +150755742
+      </span>
+    </div>
+
+
+  </div>
+  
+
+</body>
+</html>
