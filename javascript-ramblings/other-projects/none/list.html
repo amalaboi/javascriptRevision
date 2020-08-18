@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Types of List!!!</title>
+
+  <style>
+
+    :root{
+      --main-color: indigo;
+      --h2-color: royalblue;
+      --fontSize: 4rem;
+      --h2fontSize: 2rem;
+    }
+
+    html,body,h1{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h1{
+      color: var(--main-color);
+      font-size: var(--fontSize);
+      text-align: center;
+    }
+
+    h2{
+      color: var(--h2-color);
+      font-size: var(--h2fontSize);
+    }
+
+    ol, dl{
+      border: 2px solid royalblue;
+    }
+    ol li, dd{
+      padding: 1rem;      
+    }
+
+    .bold{
+      font-weight: 800;
+    }
+
+    .container{
+      width: 100%;
+      /* margin: 0 auto; */
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+<h1>Types of List!</h1>
+<hr>
+  <div class="container">
+  <!-- OL regular -->
+  <h2>OL regular</h2>
+  <ol>
+    <li>Coffee</li>
+    <li>Chocolate</li>
+    <li>Milk</li>
+    <li>Soya Coffee</li>
+  </ol>
+
+  <!-- OL 'A' -->
+  <h2>OL 'A'</h2>
+  <ol type="A">
+    <li>Coffee</li>
+    <li>Chocolate</li>
+    <li>Milk</li>
+    <li>Soya Coffee</li>
+  </ol>
+
+  <!-- OL 'a' -->
+  <h2>OL 'a'</h2>
+  <ol type="a">
+    <li>Coffee</li>
+    <li>Chocolate</li>
+    <li>Milk</li>
+    <li>Soya Coffee</li>
+  </ol>
+
+  <!-- OL 'I' -->
+  <h2>OL 'I'</h2>
+  <ol type="I">
+    <li>Coffee</li>
+    <li>Chocolate</li>
+    <li>Milk</li>
+    <li>Soya Coffee</li>
+  </ol>
+
+  <!-- OL 'i' -->
+  <h2>OL 'i'</h2>
+  <ol type="i">
+    <li>Coffee</li>
+    <li>Chocolate</li>
+    <li>Milk</li>
+    <li>Soya Coffee</li>
+  </ol>
+
+  <!-- dl -->
+  <h2>DL</h2>
+  <dl>
+    <dt class="bold">Coffee</dt>
+    <dd>-Black Coffee</dd>
+    <dd>-White Coffee</dd>
+    <dt class="bold">Fruit</dt>
+    <dd>-Banana</dd>
+    <dd>-GrapeFruit</dd>
+    <dd>-Mango</dd>
+  </dl>
+
+  </div>
+
+  
+  
+</body>
+</html>
