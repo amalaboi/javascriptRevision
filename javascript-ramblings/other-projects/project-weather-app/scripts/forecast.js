@@ -1,8 +1,8 @@
 //contains all of the javascript responsible for interacting with the
 // weather api and getting data..
 
-// API Key : 	y1wqDCP607xbhAA1HElmBempYGlYD8IB
-const key = 'y1wqDCP607xbhAA1HElmBempYGlYD8IB';
+// API Key : 	D7XGTwmgW7jadAVx4SEunOrI8shrppeZ
+const key = 'D7XGTwmgW7jadAVx4SEunOrI8shrppeZ';
 
 //getWeather data from API
 const getWeather = async (id) => {
