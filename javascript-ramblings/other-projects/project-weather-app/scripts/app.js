@@ -77,7 +77,22 @@ cityForm.addEventListener('submit',e =>{
     updateUI(data);
   }).catch(err => console.log(err));
 
+  //updating the weather app to store data inside localStorage
+  // set local storage for city location
+  localStorage.setItem('city', city);
+
 });
+
+//check for truthy value if getItem('city') returns a value...
+if(localStorage.getItem('city')){
+    updateCity(localStorage.getItem('city'))
+            .then((data)=>{
+              updateUI(data);
+            }).catch((err)=>{
+              console.log(err);
+            });
+}
+
 
 // Ternary Operator
 // const result = condition ? 'value 1' : 'value 2';
