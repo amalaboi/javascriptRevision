@@ -1,4 +1,8 @@
 // index.js
+import "./dom";
+
+console.log('index file...This is coming from index.js');
+
 
 const greet = name => {
   console.log(`hello, my name is ${name}`);
