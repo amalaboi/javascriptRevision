@@ -8,6 +8,7 @@ greet('mario');
 greet('luigi');
 greet('link');
 greet('Jason');
+greet('Gasbey');
 
 class User{
   constructor(){
