@@ -1,7 +1,11 @@
 // index.js
-import "./dom";
+import {styleBody,addTitle,contact} from "./dom";
 
 console.log('index file...This is coming from index.js');
+addTitle('Testing(index.js)... exports function(addTitle) from dom.js');
+styleBody();
+addTitle('Hello, world... from the index file..');
+console.log(contact);
 
 
 const greet = name => {
