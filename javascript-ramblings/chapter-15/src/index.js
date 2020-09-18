@@ -8,6 +8,7 @@ console.log('index file...This is coming from index.js');
 addTitle('Testing(index.js)... exports function(addTitle) from dom.js');
 styleBody();
 addTitle('Hello, world... from the index file..');
+addTitle('Test 2--- webpack-dev-server@latest');
 console.log(contact);
 console.log('users : ', users);
 
@@ -24,6 +25,7 @@ greet('luigi');
 greet('link');
 greet('Jason');
 greet('Gasbey');
+console.log('Test 2--- webpack-dev-server@latest');
 
 class User{
   constructor(){
