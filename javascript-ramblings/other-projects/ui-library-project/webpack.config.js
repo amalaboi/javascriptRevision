@@ -13,7 +13,8 @@ module.exports = {
     publicPath: '/assets/'
   },
   module: {
-    rules: [{
+    rules: [
+      {
       test: /\.js$/,
       exclude: /node_modules/,
       use:{
@@ -22,7 +23,12 @@ module.exports = {
           presets: ['@babel/preset-env']
         }
       }
-    }]
+    },
+    {
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader']
+    }
+    ]
   }
 
 };// end of module.exports
